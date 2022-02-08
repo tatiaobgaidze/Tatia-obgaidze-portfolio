@@ -1,0 +1,612 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ :root {
+    --purple: #b3b8ce;
+    --darkpurple: #424b76;
+}
+
+body {
+    background-color: var(--purple);
+}
+
+.forall {
+    max-width: 1440px;
+}
+
+
+/* HOME TURN OFF */
+
+.home {
+    display: flex;
+}
+
+.frdev {
+    letter-spacing: 3px;
+}
+
+.hometext {
+    letter-spacing: 3px;
+}
+
+.navbar {
+    height: 90vh;
+    position: fixed;
+    right: 7px;
+    top: 24px;
+}
+
+.nav-item1 {
+    position: relative;
+}
+
+.nav-item1::before {
+    content: "home";
+    background-color: #323336ba;
+    color: var(--purple);
+    padding-left: 5px;
+    padding-right: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: absolute;
+    right: 30px;
+    opacity: 0;
+    transition: transform 250ms;
+}
+
+.nav-item1:hover:before {
+    opacity: 1;
+    transform: translateX(-10px);
+}
+
+#homeicon {
+    color: #32333631;
+}
+
+.nav-item1 i:hover {
+    color: #32333631;
+    transition: transform 250ms;
+}
+
+.nav-item2 {
+    position: relative;
+}
+
+.nav-item2::before {
+    content: "about";
+    background-color: #323336ba;
+    color: var(--purple);
+    padding-left: 5px;
+    padding-right: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: absolute;
+    right: 30px;
+    opacity: 0;
+    transition: transform 250ms;
+}
+
+.nav-item2:hover:before {
+    opacity: 1;
+    transform: translateX(-10px);
+}
+
+.nav-item2 i:hover {
+    color: #32333631;
+    transition: transform 250ms;
+}
+
+.nav-item3 {
+    position: relative;
+}
+
+.nav-item3::before {
+    content: "resume";
+    background-color: #323336ba;
+    color: var(--purple);
+    padding-left: 5px;
+    padding-right: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: absolute;
+    right: 30px;
+    opacity: 0;
+    transition: transform 250ms;
+}
+
+.nav-item3:hover:before {
+    opacity: 1;
+    transform: translateX(-10px);
+}
+
+.nav-item3 i:hover {
+    color: #32333631;
+    transition: transform 250ms;
+}
+
+.nav-item4 {
+    position: relative;
+}
+
+.nav-item4::before {
+    content: "portfolio";
+    background-color: #323336ba;
+    color: var(--purple);
+    padding-left: 5px;
+    padding-right: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: absolute;
+    right: 30px;
+    opacity: 0;
+    transition: transform 250ms;
+}
+
+.nav-item4:hover:before {
+    opacity: 1;
+    transform: translateX(-10px);
+}
+
+.nav-item4 i:hover {
+    color: #32333631;
+    transition: transform 250ms;
+}
+
+.nav-item5 {
+    position: relative;
+}
+
+.nav-item5::before {
+    content: "contact";
+    background-color: #323336ba;
+    color: var(--purple);
+    padding-left: 5px;
+    padding-right: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: absolute;
+    right: 30px;
+    opacity: 0;
+    transition: transform 250ms;
+}
+
+.nav-item5:hover:before {
+    opacity: 1;
+    transform: translateX(-10px);
+}
+
+.nav-item5 i:hover {
+    color: #32333631;
+    transition: transform 250ms;
+}
+
+
+/* TURN OFF ABOUT */
+
+.about {
+    height: 90vh;
+    display: none;
+    align-items: center;
+}
+
+.abouttext {
+    width: 50%;
+    margin: auto;
+}
+
+.textaboutme {
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+
+/* RESUME */
+
+.resume {
+    width: 95%;
+    display: none !important;
+}
+
+.resumeimg {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+.aiimg {
+    width: 135px;
+    height: 135px;
+}
+
+.portfolio {
+    width: 95%;
+    display: none!important;
+}
+
+.iveriaimg {
+    width: 80%;
+}
+
+.foriveriaimg {
+    position: relative;
+    width: 80%;
+}
+
+.foriveriaimg::before {
+    content: "HTML, CSS, JavaScript";
+    width: 20%;
+    height: 100%;
+    background-color: #424b766c;
+    position: absolute;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    transition: 0.8s;
+    opacity: 0;
+    left: 80%;
+}
+
+.foriveriaimg:hover:before {
+    left: 70%;
+    opacity: 1;
+}
+
+.forunilabiimg {
+    position: relative;
+    width: 80%;
+}
+
+.unilabiimg {
+    width: 80%;
+}
+
+.forunilabiimg::before {
+    content: "HTML, CSS, JavaScript / home and discovery pages";
+    width: 20%;
+    height: 100%;
+    background-color: #424b766c;
+    position: absolute;
+    left: 80%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    transition: 0.8s;
+    opacity: 0;
+}
+
+.forunilabiimg:hover:before {
+    left: 70%;
+    opacity: 1;
+}
+
+
+/* CONTACT  */
+
+.soc {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 0 10px;
+    position: relative;
+    -webkit-box-shadow: 0px 12px 18px -1px rgba(199, 207, 216, 1);
+    -moz-box-shadow: 0px 12px 18px -1px rgba(199, 207, 216, 1);
+    box-shadow: 0px 12px 18px -1px rgba(199, 207, 216, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    transition-property: width, border-radius;
+    transition: .5s ease;
+}
+
+.soc:hover {
+    width: 300px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    transition-property: width, border-radius;
+    transition: .5s ease;
+    font-size: 20px;
+    text-align: center;
+}
+
+.rm {
+    text-decoration: none;
+}
+
+.gmail::before {
+    content: '\f1a0';
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    top: 0;
+    font-size: 30px;
+    position: absolute;
+    border-radius: 50%;
+    color: #ea4335;
+    text-decoration: none;
+}
+
+.gmail:hover {
+    color: #ea4335;
+}
+
+.gmail:hover:before {
+    background-color: #34a853;
+    color: #ffffff;
+    transition: all .5s ease;
+}
+
+.git::before {
+    content: '\f09b';
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    top: 0;
+    font-size: 30px;
+    position: absolute;
+    border-radius: 50%;
+    color: #000;
+}
+
+.soc:hover {
+    width: 300px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    transition-property: width, border-radius;
+    transition: .5s ease;
+    font-size: 20px;
+    text-align: center;
+}
+
+.git:hover {
+    color: #0D2636;
+}
+
+.git:hover:before {
+    background-color: #0D2636;
+    color: #ffffff;
+    transition: all .5s ease;
+}
+
+.link::before {
+    content: '\f08c';
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    top: 0;
+    font-size: 30px;
+    position: absolute;
+    border-radius: 50%;
+    color: #0274b3;
+}
+
+.link:hover {
+    width: 300px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    transition-property: width, border-radius;
+    transition: .5s ease;
+    font-size: 20px;
+    text-align: center;
+}
+
+.link:hover {
+    color: #0274b3;
+}
+
+.link:hover:before {
+    background-color: #0274b3;
+    color: #ffffff;
+    transition: all .5s ease;
+}
+
+.mobile::before {
+    content: '\f232';
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    top: 0;
+    font-size: 30px;
+    position: absolute;
+    border-radius: 50%;
+    color: #34a853;
+}
+
+.mobile:hover {
+    width: 300px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    transition-property: width, border-radius;
+    transition: .5s ease;
+    font-size: 20px;
+    text-align: center;
+}
+
+.mobile:hover {
+    color: #34a853;
+    padding-left: 15px;
+}
+
+.mobile:hover:before {
+    background-color: #34a853;
+    color: #ffffff;
+    transition: all .5s ease;
+}
+
+.contactcontainer {
+    display: none!important;
+}
+
+
+/* RESPONSIVEMENU */
+
+.responsivecontainer {
+    background-color: #67687a;
+}
+
+.responsivenav-item1:hover {
+    color: #ffffff;
+}
+
+.responsivenav-item2:hover {
+    color: #ffffff;
+}
+
+.responsivenav-item3:hover {
+    color: #ffffff;
+}
+
+.responsivenav-item4:hover {
+    color: #ffffff;
+}
+
+.responsivenav-item5:hover {
+    color: #ffffff;
+}
+
+
+/* responsive */
+
+
+/* home  */
+
+@media screen and (max-width: 1289px) {
+    /* .intro {
+    font-size: 3rem;
+}
+.rocket {
+    height: 80vh;
+} */
+}
+
+@media screen and (max-width: 935px) {
+    /* .intro {
+    font-size: 2rem;
+} */
+}
+
+@media screen and (max-width: 818px) {
+    /* .rocket {
+    height: 70vh;
+} */
+}
+
+@media screen and (max-width: 723px) {
+    /* .intro {
+    font-size: 1.5rem;
+} */
+    .frdev {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 723px) {
+    /* .rocket {
+    height: 50vh;
+} */
+}
+
+@media screen and (max-width: 581px) {
+    .main {
+        display: unset !important;
+        margin-top: 5rem !important;
+    }
+    .home {
+        flex-direction: column !important;
+    }
+    .textcon {
+        padding-left: 0rem !important;
+        margin-left: 0rem !important;
+    }
+    .forimg {
+        flex-direction: column;
+        padding-left: 0rem !important;
+    }
+    .rocket {
+        padding-left: 0rem !important;
+    }
+}
+
+@media screen and (max-width: 588px) {
+    .abouttext {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .abouttitle {
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+    }
+    .aboutcontent {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .resumecols {
+        display: unset !important;
+    }
+}
+
+@media screen and (max-width: 1077px) {
+    .foriveriaimg::before {
+        font-size: 1rem;
+    }
+    .forunilabiimg::before {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 659px) {
+    .foriveriaimg::before {
+        font-size: 0.5rem;
+    }
+    .forunilabiimg::before {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 581px) {
+    .closeburger {
+        display: flex !important;
+    }
+    .navbar {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .socials {
+        flex-direction: column;
+        gap: 2rem !important;
+    }
+}
