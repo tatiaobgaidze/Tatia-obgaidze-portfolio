@@ -22,6 +22,8 @@ body {
 
 .home {
     display: flex;
+    height: 100vh;
+    align-items: center;
 }
 
 .frdev {
@@ -208,6 +210,10 @@ body {
 .resume {
     width: 95%;
     display: none !important;
+}
+
+.resumecols {
+    height: 90vh;
 }
 
 .resumeimg {
@@ -463,6 +469,7 @@ body {
 
 .contactcontainer {
     display: none!important;
+    padding-top: 10%;
 }
 
 
@@ -528,7 +535,7 @@ body {
     }
 }
 
-@media screen and (max-width: 723px) {
+@media screen and (max-width: 768px) {
     /* .rocket {
     height: 50vh;
 } */
@@ -584,6 +591,12 @@ body {
     .forunilabiimg::before {
         font-size: 1rem;
     }
+    .navbar {
+        display: none !important;
+    }
+    .closeburger {
+        display: flex !important;
+    }
 }
 
 @media screen and (max-width: 659px) {
@@ -595,14 +608,7 @@ body {
     }
 }
 
-@media screen and (max-width: 581px) {
-    .closeburger {
-        display: flex !important;
-    }
-    .navbar {
-        display: none !important;
-    }
-}
+@media screen and (max-width: 581px) {}
 
 @media screen and (max-width: 425px) {
     .socials {
