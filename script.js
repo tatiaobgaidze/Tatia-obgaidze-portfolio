@@ -92,7 +92,7 @@ let contact = document.querySelector(".contactcontainer")
 let contacticon = document.querySelector("#contacticon")
 
 contacticon.addEventListener("click", () => {
-    contact.style = "display: block !important"
+    contact.style = "display: flex !important"
     contacticon.style.color = '#32333631'
 
     home.style.display = 'none'

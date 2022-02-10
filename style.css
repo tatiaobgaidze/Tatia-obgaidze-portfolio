@@ -469,7 +469,9 @@ body {
 
 .contactcontainer {
     display: none!important;
-    padding-top: 15%;
+    height: 90vh;
+    width: 50%;
+    margin: auto;
 }
 
 
@@ -505,40 +507,10 @@ body {
 
 /* home  */
 
-@media screen and (max-width: 1289px) {
-    /* .intro {
-    font-size: 3rem;
-}
-.rocket {
-    height: 80vh;
-} */
-}
-
-@media screen and (max-width: 935px) {
-    /* .intro {
-    font-size: 2rem;
-} */
-}
-
-@media screen and (max-width: 818px) {
-    /* .rocket {
-    height: 70vh;
-} */
-}
-
 @media screen and (max-width: 723px) {
-    /* .intro {
-    font-size: 1.5rem;
-} */
     .frdev {
         font-size: 1rem;
     }
-}
-
-@media screen and (max-width: 768px) {
-    /* .rocket {
-    height: 50vh;
-} */
 }
 
 @media screen and (max-width: 581px) {
@@ -584,7 +556,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1077px) {
+@media screen and (max-width: 1078px) {
     .foriveriaimg::before {
         font-size: 1rem;
     }
@@ -608,7 +580,11 @@ body {
     }
 }
 
-@media screen and (max-width: 581px) {}
+@media screen and (max-width: 789px) {
+    .contactcontainer {
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 425px) {
     .socials {
